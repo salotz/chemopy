@@ -1,0 +1,247 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module cpsa</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>cpsa</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/orient/pychem/cpsa.py">/home/orient/pychem/cpsa.py</a></font></td></tr></table>
+    <p><tt>##############################################################################<br>
+This&nbsp;module&nbsp;is&nbsp;used&nbsp;for&nbsp;calculating&nbsp;charged&nbsp;partial&nbsp;surface&nbsp;area&nbsp;descriptors<br>
+&nbsp;<br>
+(CPSA)&nbsp;proposed&nbsp;by&nbsp;Peter.&nbsp;Jurs.&nbsp;If&nbsp;you&nbsp;have&nbsp;any&nbsp;question&nbsp;please&nbsp;contact&nbsp;me<br>
+&nbsp;<br>
+via&nbsp;email.<br>
+&nbsp;<br>
+Created&nbsp;on&nbsp;Tue&nbsp;Apr&nbsp;19&nbsp;10:40:45&nbsp;2011<br>
+&nbsp;<br>
+@author:&nbsp;Dongsheng&nbsp;Cao,&nbsp;Yizeng&nbsp;Liang,&nbsp;Qingsong&nbsp;Xu<br>
+##############################################################################</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="asa.html">asa</a><br>
+</td><td width="25%" valign=top><a href="pybel.html">pybel</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-CalculateASA"><strong>CalculateASA</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;solvent-accessible&nbsp;surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;ASA<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateDPSA1"><strong>CalculateDPSA1</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;difference&nbsp;in&nbsp;charged&nbsp;partial&nbsp;surface&nbsp;area<br>
+--&gt;DPSA1<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateDPSA2"><strong>CalculateDPSA2</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;difference&nbsp;in&nbsp;total&nbsp;charge&nbsp;weighted&nbsp;partial<br>
+&nbsp;<br>
+surface&nbsp;area<br>
+&nbsp;<br>
+--&gt;DPSA2<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateDPSA3"><strong>CalculateDPSA3</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;difference&nbsp;in&nbsp;atomic&nbsp;charge&nbsp;weighted&nbsp;surface&nbsp;area<br>
+&nbsp;<br>
+--&gt;DPSA3<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateFNSA1"><strong>CalculateFNSA1</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;fractional&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;FNSA1<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateFNSA2"><strong>CalculateFNSA2</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;fractional&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;FNSA2<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateFNSA3"><strong>CalculateFNSA3</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;fractional&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;FNSA3<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateFPSA1"><strong>CalculateFPSA1</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;fractional&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;FPSA1<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateFPSA2"><strong>CalculateFPSA2</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;fractional&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;FPSA2<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateFPSA3"><strong>CalculateFPSA3</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;fractional&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;surface<br>
+&nbsp;<br>
+areas<br>
+&nbsp;<br>
+--&gt;FPSA3<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateFractionTATP"><strong>CalculateFractionTATP</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;fraction&nbsp;between&nbsp;TASA&nbsp;and&nbsp;TPSA<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateMSA"><strong>CalculateMSA</strong></a>()</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;molecular&nbsp;surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;MSA<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculatePNSA1"><strong>CalculatePNSA1</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;partial&nbsp;negative&nbsp;area<br>
+&nbsp;<br>
+It&nbsp;is&nbsp;the&nbsp;sum&nbsp;of&nbsp;the&nbsp;solvent-accessible&nbsp;surface&nbsp;areas&nbsp;of&nbsp;all&nbsp;<br>
+&nbsp;<br>
+negatively&nbsp;charged&nbsp;atoms.<br>
+&nbsp;<br>
+--&gt;PNSA1<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculatePNSA2"><strong>CalculatePNSA2</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;total&nbsp;charge&nbsp;wighted&nbsp;negative&nbsp;surface&nbsp;area<br>
+&nbsp;<br>
+It&nbsp;is&nbsp;the&nbsp;partial&nbsp;negative&nbsp;solvent-accessible&nbsp;surface&nbsp;area&nbsp;<br>
+&nbsp;<br>
+multiplied&nbsp;by&nbsp;the&nbsp;total&nbsp;negative&nbsp;charge.<br>
+&nbsp;<br>
+--&gt;PNSA2<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculatePNSA3"><strong>CalculatePNSA3</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;atom&nbsp;charge&nbsp;weighted&nbsp;negative&nbsp;surface&nbsp;ares<br>
+&nbsp;<br>
+It&nbsp;is&nbsp;the&nbsp;sum&nbsp;of&nbsp;the&nbsp;products&nbsp;of&nbsp;atomic&nbsp;solvent-accessible&nbsp;<br>
+&nbsp;<br>
+surface&nbsp;area&nbsp;and&nbsp;partial&nbsp;charges&nbsp;over&nbsp;all&nbsp;negatively&nbsp;charges&nbsp;atoms.<br>
+&nbsp;<br>
+--&gt;PNSA3<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculatePPSA1"><strong>CalculatePPSA1</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;partial&nbsp;negative&nbsp;area<br>
+&nbsp;<br>
+It&nbsp;is&nbsp;the&nbsp;sum&nbsp;of&nbsp;the&nbsp;solvent-accessible&nbsp;surface&nbsp;areas&nbsp;of&nbsp;<br>
+&nbsp;<br>
+all&nbsp;positively&nbsp;charged&nbsp;atoms.<br>
+&nbsp;<br>
+--&gt;PPSA1<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculatePPSA2"><strong>CalculatePPSA2</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;total&nbsp;charge&nbsp;wighted&nbsp;negative&nbsp;surface&nbsp;area<br>
+&nbsp;<br>
+It&nbsp;is&nbsp;the&nbsp;partial&nbsp;negative&nbsp;solvent-accessible&nbsp;surface&nbsp;area&nbsp;<br>
+&nbsp;<br>
+multiplied&nbsp;by&nbsp;the&nbsp;total&nbsp;positive&nbsp;charge.<br>
+&nbsp;<br>
+--&gt;PPSA2<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculatePPSA3"><strong>CalculatePPSA3</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;atom&nbsp;charge&nbsp;weighted&nbsp;positive&nbsp;surface&nbsp;ares<br>
+&nbsp;<br>
+It&nbsp;is&nbsp;the&nbsp;sum&nbsp;of&nbsp;the&nbsp;products&nbsp;of&nbsp;atomic&nbsp;solvent-accessible<br>
+&nbsp;<br>
+surface&nbsp;area&nbsp;and&nbsp;partial&nbsp;charges&nbsp;over&nbsp;all&nbsp;positively&nbsp;charges&nbsp;atoms.<br>
+&nbsp;<br>
+--&gt;PPSA3<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateRASA"><strong>CalculateRASA</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;relative&nbsp;hydrophobic&nbsp;surface&nbsp;area<br>
+&nbsp;<br>
+--&gt;RASA<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateRNCS"><strong>CalculateRNCS</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;relative&nbsp;negative&nbsp;charge&nbsp;surface&nbsp;area<br>
+&nbsp;<br>
+--&gt;RNCS<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateRPCS"><strong>CalculateRPCS</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;relative&nbsp;positive&nbsp;charge&nbsp;surface&nbsp;area<br>
+&nbsp;<br>
+--&gt;RPCS<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateRPSA"><strong>CalculateRPSA</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;relative&nbsp;polar&nbsp;surface&nbsp;area<br>
+&nbsp;<br>
+--&gt;RPSA<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateTASA"><strong>CalculateTASA</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;total&nbsp;hydrophobic&nbsp;surface&nbsp;area<br>
+&nbsp;<br>
+--&gt;TASA<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateTPSA"><strong>CalculateTPSA</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;total&nbsp;polar&nbsp;surface&nbsp;area<br>
+&nbsp;<br>
+--&gt;PSA<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateWNSA1"><strong>CalculateWNSA1</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;surface&nbsp;weighted&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;<br>
+&nbsp;<br>
+surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;WNSA1<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateWNSA2"><strong>CalculateWNSA2</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;surface&nbsp;weighted&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;<br>
+&nbsp;<br>
+surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;WNSA2<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateWNSA3"><strong>CalculateWNSA3</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;surface&nbsp;weighted&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;<br>
+&nbsp;<br>
+surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;WNSA3<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateWPSA1"><strong>CalculateWPSA1</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;surface&nbsp;weighted&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;<br>
+&nbsp;<br>
+surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;WPSA1<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateWPSA2"><strong>CalculateWPSA2</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;surface&nbsp;weighted&nbsp;charged&nbsp;partial&nbsp;negative&nbsp;<br>
+&nbsp;<br>
+surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;WPSA2<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateWPSA3"><strong>CalculateWPSA3</strong></a>(ChargeSA)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;surface&nbsp;weighted&nbsp;charged&nbsp;partial&nbsp;negative<br>
+&nbsp;<br>
+surface&nbsp;areas<br>
+&nbsp;<br>
+--&gt;WPSA3<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetCPSA"><strong>GetCPSA</strong></a>()</dt><dd><tt>#################################################################<br>
+Wrapper&nbsp;for&nbsp;the&nbsp;CPSA&nbsp;descriptors<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetChargeSA"><strong>GetChargeSA</strong></a>(RadiusProbe<font color="#909090">=1.5</font>, n_sphere_point<font color="#909090">=960</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;the&nbsp;list&nbsp;form&nbsp;for&nbsp;all&nbsp;atoms&nbsp;in&nbsp;a&nbsp;molecule.<br>
+&nbsp;<br>
+It&nbsp;includes&nbsp;the&nbsp;atom&nbsp;symbol,&nbsp;charge&nbsp;and&nbsp;partial&nbsp;solvent-accessible&nbsp;<br>
+&nbsp;<br>
+surface&nbsp;areas.&nbsp;<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;this&nbsp;is&nbsp;list&nbsp;form&nbsp;whose&nbsp;element&nbsp;is&nbsp;still&nbsp;list&nbsp;form&nbsp;of&nbsp;each&nbsp;atom.<br>
+#################################################################</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Version</strong> = 1.0<br>
+<strong>filename</strong> = 'temp'</td></tr></table>
+</body></html>

@@ -1,0 +1,501 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module pychem</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>pychem</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/orient/PyChem/src/pychem/pychem.py">/home/orient/PyChem/src/pychem/pychem.py</a></font></td></tr></table>
+    <p><tt>##############################################################################<br>
+&nbsp;<br>
+A&nbsp;class&nbsp;used&nbsp;for&nbsp;computing&nbsp;different&nbsp;types&nbsp;of&nbsp;drug&nbsp;descriptors!&nbsp;<br>
+&nbsp;<br>
+You&nbsp;can&nbsp;freely&nbsp;use&nbsp;and&nbsp;distribute&nbsp;it.&nbsp;If&nbsp;you&nbsp;have&nbsp;any&nbsp;problem,&nbsp;<br>
+&nbsp;<br>
+you&nbsp;could&nbsp;contact&nbsp;with&nbsp;us&nbsp;timely.<br>
+&nbsp;<br>
+Authors:&nbsp;Dongsheng&nbsp;Cao&nbsp;and&nbsp;Yizeng&nbsp;Liang.<br>
+&nbsp;<br>
+Date:&nbsp;2012.11.17<br>
+&nbsp;<br>
+Email:&nbsp;oriental-cds@163.com<br>
+&nbsp;<br>
+##############################################################################</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="rdkit.Chem.html">rdkit.Chem</a><br>
+<a href="basak.html">basak</a><br>
+<a href="bcut.html">bcut</a><br>
+<a href="charge.html">charge</a><br>
+<a href="connectivity.html">connectivity</a><br>
+<a href="constitution.html">constitution</a><br>
+</td><td width="25%" valign=top><a href="cpsa.html">cpsa</a><br>
+<a href="estate.html">estate</a><br>
+<a href="fingerprint.html">fingerprint</a><br>
+<a href="geary.html">geary</a><br>
+<a href="geometric.html">geometric</a><br>
+<a href="getmol.html">getmol</a><br>
+</td><td width="25%" valign=top><a href="kappa.html">kappa</a><br>
+<a href="moe.html">moe</a><br>
+<a href="molproperty.html">molproperty</a><br>
+<a href="moran.html">moran</a><br>
+<a href="moreaubroto.html">moreaubroto</a><br>
+<a href="morse.html">morse</a><br>
+</td><td width="25%" valign=top><a href="pybel.html">pybel</a><br>
+<a href="rdf.html">rdf</a><br>
+<a href="string.html">string</a><br>
+<a href="topology.html">topology</a><br>
+<a href="whim.html">whim</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="pychem.html#PyChem2d">PyChem2d</a>
+</font></dt><dt><font face="helvetica, arial"><a href="pychem.html#PyChem3d">PyChem3d</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PyChem2d">class <strong>PyChem2d</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>#################################################################<br>
+A&nbsp;PyDrug&nbsp;class&nbsp;used&nbsp;for&nbsp;computing&nbsp;drug&nbsp;descriptors.<br>
+#################################################################<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PyChem2d-GetAllDescriptor"><strong>GetAllDescriptor</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;descriptors&nbsp;(633).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetAllDescriptor">GetAllDescriptor</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetBasak"><strong>GetBasak</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;Basak&nbsp;information&nbsp;descriptors&nbsp;(21).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetBasak">GetBasak</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetBcut"><strong>GetBcut</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;bcut/burden&nbsp;descriptors&nbsp;(64).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetBcut">GetBcut</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetCharge"><strong>GetCharge</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;charge&nbsp;descriptors&nbsp;(25).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetCharge">GetCharge</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetConnectivity"><strong>GetConnectivity</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;conenctivity&nbsp;descriptors&nbsp;(44).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetConnectivity">GetConnectivity</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetConstitution"><strong>GetConstitution</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;constitutional&nbsp;descriptors&nbsp;(30).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetConstitution">GetConstitution</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetEstate"><strong>GetEstate</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;estate&nbsp;descriptors&nbsp;(316).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetEstate">GetEstate</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetFingerprint"><strong>GetFingerprint</strong></a>(self, FPName<font color="#909090">='topological'</font>)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;fingerprint&nbsp;descriptors.<br>
+&nbsp;<br>
+see&nbsp;the&nbsp;fingerprint&nbsp;type&nbsp;in&nbsp;FingerprintName<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetFingerprint">GetFingerprint</a>(FPName='topological')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;tuple&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetGeary"><strong>GetGeary</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;Geary&nbsp;autocorrelation&nbsp;descriptors&nbsp;(32).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetGeary">GetGeary</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetKappa"><strong>GetKappa</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;kappa&nbsp;descriptors&nbsp;(7).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetKappa">GetKappa</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetMOE"><strong>GetMOE</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;MOE-type&nbsp;descriptors&nbsp;(60).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetMOE">GetMOE</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetMolFromCAS"><strong>GetMolFromCAS</strong></a>(self, ID<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;a&nbsp;molecule&nbsp;by&nbsp;kegg&nbsp;id&nbsp;(e.g.,&nbsp;50-29-3).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetMolFromCAS">GetMolFromCAS</a>(ID)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;ID&nbsp;is&nbsp;a&nbsp;CAS&nbsp;identifier.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetMolFromDrugbank"><strong>GetMolFromDrugbank</strong></a>(self, ID<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;a&nbsp;molecule&nbsp;by&nbsp;drugbank&nbsp;id&nbsp;(e.g.,DB00133).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetMolFromDrugbank">GetMolFromDrugbank</a>(ID)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;ID&nbsp;is&nbsp;a&nbsp;compound&nbsp;identifier&nbsp;in&nbsp;Drugbank.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetMolFromEBI"><strong>GetMolFromEBI</strong></a>(self, ID<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;a&nbsp;molecule&nbsp;by&nbsp;EBI&nbsp;id.<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetMolFromEBI">GetMolFromEBI</a>(ID)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;ID&nbsp;is&nbsp;a&nbsp;compound&nbsp;identifier&nbsp;in&nbsp;EBI.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetMolFromKegg"><strong>GetMolFromKegg</strong></a>(self, ID<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;a&nbsp;molecule&nbsp;by&nbsp;kegg&nbsp;id&nbsp;(e.g.,&nbsp;D02176).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetMolFromKegg">GetMolFromKegg</a>(ID)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;ID&nbsp;is&nbsp;a&nbsp;compound&nbsp;identifier&nbsp;in&nbsp;KEGG.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetMolFromNCBI"><strong>GetMolFromNCBI</strong></a>(self, ID<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;a&nbsp;molecule&nbsp;by&nbsp;NCBI&nbsp;id&nbsp;(e.g.,&nbsp;2244).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetMolFromNCBI">GetMolFromNCBI</a>(ID)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;ID&nbsp;is&nbsp;a&nbsp;compound&nbsp;ID&nbsp;(CID)&nbsp;in&nbsp;NCBI.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetMolProperty"><strong>GetMolProperty</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;molecular&nbsp;properties&nbsp;(6).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetMolProperty">GetMolProperty</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetMoran"><strong>GetMoran</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;Moran&nbsp;autocorrealtion&nbsp;descriptors&nbsp;(32).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetMoran">GetMoran</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetMoreauBroto"><strong>GetMoreauBroto</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;Moreau-Broto&nbsp;autocorrelation&nbsp;descriptors(32).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetMoreauBroto">GetMoreauBroto</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-GetTopology"><strong>GetTopology</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;topological&nbsp;descriptors&nbsp;(35).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-GetTopology">GetTopology</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-ReadMolFromFile"><strong>ReadMolFromFile</strong></a>(self, filename<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Read&nbsp;a&nbsp;molecule&nbsp;by&nbsp;SDF&nbsp;or&nbsp;MOL&nbsp;file&nbsp;format.<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-ReadMolFromFile">ReadMolFromFile</a>(filename)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;filename&nbsp;is&nbsp;a&nbsp;file&nbsp;name.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;molecule&nbsp;object.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-ReadMolFromInchi"><strong>ReadMolFromInchi</strong></a>(self, inchi<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Read&nbsp;a&nbsp;molecule&nbsp;by&nbsp;Inchi&nbsp;string.<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-ReadMolFromInchi">ReadMolFromInchi</a>(inchi)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;inchi&nbsp;is&nbsp;a&nbsp;InChi&nbsp;string.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;molecule&nbsp;object.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-ReadMolFromMol"><strong>ReadMolFromMol</strong></a>(self, filename<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Read&nbsp;a&nbsp;molecule&nbsp;with&nbsp;mol&nbsp;file&nbsp;format.<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-ReadMolFromMol">ReadMolFromMol</a>(filename)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;filename&nbsp;is&nbsp;a&nbsp;file&nbsp;name.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;molecule&nbsp;object.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-ReadMolFromSmile"><strong>ReadMolFromSmile</strong></a>(self, smi<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Read&nbsp;a&nbsp;molecule&nbsp;by&nbsp;SMILES&nbsp;string.<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem2d-ReadMolFromSmile">ReadMolFromSmile</a>(smi)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;smi&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;molecule&nbsp;object.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem2d-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>#################################################################<br>
+constructor&nbsp;of&nbsp;pydrug.<br>
+#################################################################</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PyChem3d">class <strong>PyChem3d</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>#################################################################<br>
+A&nbsp;PyDrug&nbsp;class&nbsp;used&nbsp;for&nbsp;computing&nbsp;drug&nbsp;descriptors.<br>
+#################################################################<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PyChem3d-GetAllDescriptor"><strong>GetAllDescriptor</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;descriptors&nbsp;(502).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetAllDescriptor">GetAllDescriptor</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-GetCPSA"><strong>GetCPSA</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;CPSA&nbsp;descriptors&nbsp;(30).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetCPSA">GetCPSA</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-GetGeometric"><strong>GetGeometric</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;geometric&nbsp;descriptors&nbsp;(12).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetGeometric">GetGeometric</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-GetMoRSE"><strong>GetMoRSE</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;3-D&nbsp;MoRSE&nbsp;descriptors&nbsp;(210).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetMoRSE">GetMoRSE</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-GetMolFromCAS"><strong>GetMolFromCAS</strong></a>(self, ID<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;a&nbsp;molecule&nbsp;by&nbsp;kegg&nbsp;id&nbsp;(e.g.,&nbsp;50-29-3).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetMolFromCAS">GetMolFromCAS</a>(ID)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;ID&nbsp;is&nbsp;a&nbsp;CAS&nbsp;identifier.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-GetMolFromDrugbank"><strong>GetMolFromDrugbank</strong></a>(self, ID<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;a&nbsp;molecule&nbsp;by&nbsp;drugbank&nbsp;id&nbsp;(e.g.,DB00133).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetMolFromDrugbank">GetMolFromDrugbank</a>(ID)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;ID&nbsp;is&nbsp;a&nbsp;compound&nbsp;identifier&nbsp;in&nbsp;Drugbank.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-GetMolFromEBI"><strong>GetMolFromEBI</strong></a>(self, ID<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;a&nbsp;molecule&nbsp;by&nbsp;EBI&nbsp;id.<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetMolFromEBI">GetMolFromEBI</a>(ID)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;ID&nbsp;is&nbsp;a&nbsp;compound&nbsp;identifier&nbsp;in&nbsp;EBI.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-GetMolFromKegg"><strong>GetMolFromKegg</strong></a>(self, ID<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;a&nbsp;molecule&nbsp;by&nbsp;kegg&nbsp;id&nbsp;(e.g.,&nbsp;D02176).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetMolFromKegg">GetMolFromKegg</a>(ID)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;ID&nbsp;is&nbsp;a&nbsp;compound&nbsp;identifier&nbsp;in&nbsp;KEGG.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-GetMolFromNCBI"><strong>GetMolFromNCBI</strong></a>(self, ID<font color="#909090">=''</font>)</dt><dd><tt>#################################################################<br>
+Get&nbsp;a&nbsp;molecule&nbsp;by&nbsp;NCBI&nbsp;id&nbsp;(e.g.,&nbsp;2244).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetMolFromNCBI">GetMolFromNCBI</a>(ID)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;ID&nbsp;is&nbsp;a&nbsp;compound&nbsp;ID&nbsp;(CID)&nbsp;in&nbsp;NCBI.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;SMILES&nbsp;string.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-GetRDF"><strong>GetRDF</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;3-D&nbsp;RDF&nbsp;descriptors&nbsp;(180).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetRDF">GetRDF</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-GetWHIM"><strong>GetWHIM</strong></a>(self)</dt><dd><tt>#################################################################<br>
+Calculate&nbsp;all&nbsp;WHIM&nbsp;descriptors&nbsp;(70).<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=<a href="#PyChem3d-GetWHIM">GetWHIM</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;is&nbsp;a&nbsp;dict&nbsp;form.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-ReadMol"><strong>ReadMol</strong></a>(self, molstr<font color="#909090">=''</font>, molformat<font color="#909090">='smi'</font>)</dt><dd><tt>#################################################################<br>
+Read&nbsp;a&nbsp;molecule&nbsp;by&nbsp;Inchi&nbsp;string.<br>
+&nbsp;<br>
+Usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;res=ReadMolFromInchi(inchi)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input:&nbsp;inchi&nbsp;is&nbsp;a&nbsp;InChi&nbsp;string.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Output:&nbsp;res&nbsp;is&nbsp;a&nbsp;molecule&nbsp;object.<br>
+#################################################################</tt></dd></dl>
+
+<dl><dt><a name="PyChem3d-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>#################################################################<br>
+constructor&nbsp;of&nbsp;pydrug.<br>
+#################################################################</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>FingerprintName</strong> = ['topological', 'Estate', 'FP4', 'atompairs', 'torsions', 'morgan', 'MACCS']<br>
+<strong>Version</strong> = 1.0</td></tr></table>
+</body></html>

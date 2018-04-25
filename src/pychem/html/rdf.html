@@ -1,0 +1,124 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module rdf</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>rdf</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/orient/pychem/rdf.py">/home/orient/pychem/rdf.py</a></font></td></tr></table>
+    <p><tt>##############################################################################<br>
+&nbsp;<br>
+The&nbsp;calculation&nbsp;of&nbsp;3D&nbsp;RDF&nbsp;descriptors.&nbsp;You&nbsp;can&nbsp;get&nbsp;180&nbsp;molecular<br>
+&nbsp;<br>
+decriptors.&nbsp;You&nbsp;can&nbsp;freely&nbsp;use&nbsp;and&nbsp;distribute&nbsp;it.&nbsp;If&nbsp;you&nbsp;hava&nbsp;&nbsp;<br>
+&nbsp;<br>
+any&nbsp;problem,&nbsp;you&nbsp;could&nbsp;contact&nbsp;with&nbsp;us&nbsp;timely!<br>
+&nbsp;<br>
+Authors:&nbsp;Dongsheng&nbsp;Cao&nbsp;and&nbsp;Yizeng&nbsp;Liang.<br>
+&nbsp;<br>
+Date:&nbsp;2012.11.13<br>
+&nbsp;<br>
+Email:&nbsp;oriental-cds@163.com<br>
+&nbsp;<br>
+##############################################################################</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top><a href="scipy.html">scipy</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-CalculateChargeRDF"><strong>CalculateChargeRDF</strong></a>(ChargeCoordinates)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;<br>
+&nbsp;<br>
+(RDF)&nbsp;descriptors&nbsp;based&nbsp;on&nbsp;atomic&nbsp;charge.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateMassRDF"><strong>CalculateMassRDF</strong></a>(mol, ChargeCoordinates)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;(RDF)&nbsp;<br>
+&nbsp;<br>
+descriptors&nbsp;based&nbsp;on&nbsp;atomic&nbsp;mass.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculatePolarizabilityRDF"><strong>CalculatePolarizabilityRDF</strong></a>(ChargeCoordinates)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;<br>
+&nbsp;<br>
+(RDF)&nbsp;descriptors&nbsp;based&nbsp;on&nbsp;atomic&nbsp;polarizability.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateSandersonElectronegativityRDF"><strong>CalculateSandersonElectronegativityRDF</strong></a>(ChargeCoordinates)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;<br>
+&nbsp;<br>
+(RDF)&nbsp;descriptors&nbsp;based&nbsp;on&nbsp;atomic&nbsp;electronegativity.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateUnweightRDF"><strong>CalculateUnweightRDF</strong></a>(ChargeCoordinates)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;unweighted&nbsp;radial&nbsp;distribution&nbsp;<br>
+&nbsp;<br>
+function&nbsp;(RDF)&nbsp;descriptors.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-CalculateVDWVolumeRDF"><strong>CalculateVDWVolumeRDF</strong></a>(ChargeCoordinates)</dt><dd><tt>#################################################################<br>
+The&nbsp;calculation&nbsp;of&nbsp;&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;<br>
+&nbsp;<br>
+(RDF)&nbsp;descriptors&nbsp;based&nbsp;on&nbsp;atomic&nbsp;van&nbsp;der&nbsp;Waals&nbsp;volume.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetAtomDistance"><strong>GetAtomDistance</strong></a>(x, y)</dt><dd><tt>#################################################################<br>
+Obtain&nbsp;the&nbsp;Elucidian&nbsp;distance&nbsp;based&nbsp;on&nbsp;the&nbsp;<br>
+&nbsp;<br>
+coordinates&nbsp;of&nbsp;two&nbsp;atoms<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetGementricalDistanceMatrix"><strong>GetGementricalDistanceMatrix</strong></a>(CoordinateList)</dt><dd><tt>#################################################################<br>
+Obtain&nbsp;the&nbsp;distance&nbsp;matrix&nbsp;of&nbsp;a&nbsp;molecule&nbsp;based&nbsp;<br>
+&nbsp;<br>
+on&nbsp;coordinate&nbsp;list<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetRDF"><strong>GetRDF</strong></a>(mol)</dt><dd><tt>#################################################################<br>
+Obtain&nbsp;all&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;descriptors&nbsp;based&nbsp;<br>
+&nbsp;<br>
+on&nbsp;different&nbsp;weighted&nbsp;schems.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetRDFCharge"><strong>GetRDFCharge</strong></a>(mol)</dt><dd><tt>#################################################################<br>
+Obtain&nbsp;all&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;descriptors&nbsp;based&nbsp;<br>
+&nbsp;<br>
+on&nbsp;Charge&nbsp;schems.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetRDFMass"><strong>GetRDFMass</strong></a>(mol)</dt><dd><tt>#################################################################<br>
+Obtain&nbsp;all&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;descriptors&nbsp;based&nbsp;<br>
+&nbsp;<br>
+on&nbsp;Mass&nbsp;schems.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetRDFPolarizability"><strong>GetRDFPolarizability</strong></a>(mol)</dt><dd><tt>#################################################################<br>
+Obtain&nbsp;all&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;descriptors&nbsp;based&nbsp;<br>
+&nbsp;<br>
+on&nbsp;Polarizability&nbsp;schems.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetRDFSandersonElectronegativity"><strong>GetRDFSandersonElectronegativity</strong></a>(mol)</dt><dd><tt>#################################################################<br>
+Obtain&nbsp;all&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;descriptors&nbsp;based&nbsp;<br>
+&nbsp;<br>
+onSanderson&nbsp;Electronegativity&nbsp;schems.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetRDFUnweighed"><strong>GetRDFUnweighed</strong></a>(mol)</dt><dd><tt>#################################################################<br>
+Obtain&nbsp;all&nbsp;Unweighed&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;descriptors.<br>
+#################################################################</tt></dd></dl>
+ <dl><dt><a name="-GetRDFVDWVolume"><strong>GetRDFVDWVolume</strong></a>(mol)</dt><dd><tt>#################################################################<br>
+Obtain&nbsp;all&nbsp;radial&nbsp;distribution&nbsp;function&nbsp;descriptors&nbsp;based&nbsp;<br>
+&nbsp;<br>
+on&nbsp;VDW&nbsp;Volume&nbsp;schems.<br>
+#################################################################</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Version</strong> = 1.0</td></tr></table>
+</body></html>
